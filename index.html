@@ -1,0 +1,36 @@
+﻿<!doctype html>
+<html ng-app="OutboxApp">
+<head>
+    <link href="css/style.css" rel="stylesheet" />
+    <script src="scripts/angular.js"></script>
+    <script src="https://code.angularjs.org/1.2.28/angular-route.min.js"></script>
+
+</head>
+<body >
+    <div class="header">
+        <div class="container">
+            <img src="https://images.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.arthurbrownjr.com%2Fwp-content%2Fuploads%2F2012%2F06%2Fyahoo-logo2.png&f=1" width="140" height="150">
+        </div>
+    </div>
+
+    <div class="main">
+        <div ng-view></div>
+        <div class="container">
+
+            <div ng-view></div>
+
+        </div>
+    </div>
+
+    <!-- Modules -->
+    <script src="scripts/app.js"></script>
+    <!-- Services -->
+    <script src="scripts/email.js"></script>
+
+    <!-- Controllers -->
+    <script src="controllers/home_controller.js"></script>
+    <script src="controllers/email_controller.js"></script>
+
+   
+</body>
+</html>
